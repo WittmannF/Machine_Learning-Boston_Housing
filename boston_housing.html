@@ -2157,7 +2157,7 @@ xcGAX9H9LDgAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> When the model is trained with a maximum depth of 1, the model suffer from high bias since ... and low variance since ... When the model is trained with a maximum depth of 10, the model tends to have a low bias since ..., however a high variance because ... The visual cues that justify my conclusions for the case of high bias is that both training and validation curves are growing together while the visual cues for high variance is when the training and validation scores gets more distant (training keeps increasing and validation decreases).</p>
+<p><strong>Answer: </strong> A high bias means that there is a high approximation error while a high variance indicates that there is a high variation error between datasets. When the model is trained with a maximum depth of 1, we have an underfit case, consequently the model suffer from high bias since the results are too far from the expected results and more data would not help. When the model is trained with a maximum depth of 10, the model tends to have a high variance because the model is overfitted to the training score, however it would present a high variation of results for other datasets. The visual cues that justify my conclusions for the case of high bias is that both training and validation curves are growing together while the visual cues for high variance is when the training and validation scores gets more distant (training keeps increasing and validation decreases).</p>
 
 </div>
 </div>
@@ -2177,7 +2177,7 @@ xcGAX9H9LDgAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Based on the learning curve and complexity curve, a maximum depth of 3 gives a better bias–variance tradeoff. The intuition that led me to this answer was the small gap between training and test in the learning curves along with a high score for the testing score. Another intuition, from the complexity curve, was the inflection point of the validation curve between maximum depth 3 and 4. That indicates that both of these depths are good for generalization.</p>
+<p><strong>Answer: </strong> Based on the learning curve and complexity curve, a maximum depth of 3 or 4 gives a better bias–variance tradeoff. The intuition that led me to this answer was the small gap between training and test in the learning curves along with a high score for the testing score. Another intuition was the inflection point present in the complexity curve of the validation curve. This inflection point was between maximum depth 3 and 4. That indicates that both of these depths are good for generalization.</p>
 
 </div>
 </div>
